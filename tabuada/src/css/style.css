@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #313131;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding: 40px;
+    background-color: #707070;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pergunta {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.pergunta h1 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.pergunta label {
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+#num {
+    width: 100%;
+    padding: 10px;
+    background-color: #00000090;
+    color: #fff;
+    height: 40px;
+    border:1px solid #313131;
+    border-radius: 5px;
+}
+
+#num::placeholder {
+    color: #ffffff;
+}
+
+#num::-webkit-outer-spin-button,
+#num::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pergunta .botao {
+    background-color: #e9e9e9;
+    width: 100%;
+    height: 40px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    align-self: center;
+    cursor: pointer;
+    transition: all .40s ease;
+}
+
+.pergunta .botao:hover {
+    background-color: #313131;
+    color: #fff;
+}
+
+.resultado {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.9rem;
+
+}
+
+@media Screen and (max-width: 600px) {
+    body {
+        padding: 5%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+}
